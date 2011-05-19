@@ -89,8 +89,10 @@ pre,
 table,
 address,
 fieldset,
-figure {
+figure,
+form {
   margin-bottom: 20px;
+  line-height: 2em;
 }
 
 /* @end Spacing */
