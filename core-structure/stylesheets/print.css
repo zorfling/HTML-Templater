@@ -1,0 +1,84 @@
+body {
+    margin:0 !important;
+    background: #929292;
+    padding:0 !important;
+    line-height: 1.4;
+    word-spacing:1.1pt;
+    letter-spacing:0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; font-size: 12pt;
+}
+ 
+#wrapper{
+    width: 190mm;
+    background: white url(screen/page-shadow.png) right repeat-y;
+    padding: 10mm;
+    border-right: 4px solid #606060;
+}
+ 
+/*Headings */
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif;  word-wrap: break-word; margin-bottom: 20px; font-weight: bold;}
+h1{font-size:19pt; border-bottom: 3px solid #cccccc; padding-bottom: 10px; }
+h2{font-size:17pt; border-bottom: 3px solid #cccccc; padding-bottom: 10px; }
+h3{font-size:15pt;}
+h4,h5,h6{font-size:12pt;}
+
+ul, ol,
+p { margin-bottom: 20px; } 
+
+ul li {list-style-type: disc; margin-left: 20px;}
+ol li {list-style-type: decimal; margin-left: 20px;}
+code { font: 10pt Courier, monospace; }
+blockquote { margin: 1.3em; padding: 1em;  font-size: 10pt; }
+hr { border-top: none; border-right: none; border-left: none; border-bottom: 2px solid #cccccc; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+ 
+/* Images */
+img { float: left; margin: 1em 1.5em 1.5em 0; }
+a img { border: none; }
+ 
+/* Links */
+a:link, a:visited { background: transparent; font-weight: 700; text-decoration: underline;color:#333; word-wrap: break-word; }
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after { content: " (" attr(href) ") "; font-size: 90%; }
+a[href^="http://"] {color:#000; }
+ 
+/* Table */
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th,td { padding: 4px 10px 4px 0; }
+tfoot { font-style: italic; }
+caption { background: #fff; margin-bottom:2em; text-align:left; }
+thead {display: table-header-group;}
+tr {page-break-inside: avoid;}
+ 
+/*hide various parts from the site */
+
+#head, 
+#hero,
+#user-controls,
+#secondary,
+#main #sidebar,
+#footer,
+a.skip-nav,
+.wai
+{
+    display: none;
+}
+ 
+#main #breadcrumbs {
+    display: none;
+}
+ 
+/*Override for print*/
+@media print{
+ 
+    body{
+        width: 100% !important;
+    }
+ 
+    #wrapper{
+        width: auto;
+        background: none;
+        border-right: none;
+    }
+}

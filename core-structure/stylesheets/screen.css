@@ -1,0 +1,112 @@
+/* @group Search */
+#search p { position: relative; }
+#search label {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+/* @end Search */
+
+/* @group Navigation */
+
+#suckerfish2 {
+	background: #cccccc;
+	height: 36px;
+	margin:	0;
+	z-index: 1000;
+}
+	/*---LEVEL 1 MENU---*/
+
+	#suckerfish2 > li {
+		float: left;
+		font-size: 11px;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+		#suckerfish2 > li > a {
+			color: #fff;
+			display: block;
+			line-height: 30px;
+			margin:  3px 0;
+			padding: 0px 12px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+	#suckerfish2 > li:hover {
+		background: #6c6b6d url("/images/menu-item.gif") repeat-x;	
+	}
+	
+	#suckerfish2 > li + li > a  {
+			border-left: 1px solid #7b7b7b;
+	}
+		
+		/*----DROP DOWN (LEVEL 2)----*/
+		
+	
+		/*----HIDE----*/
+		#suckerfish2 li ul {
+			background: #000 url("/images/sprite-menu.png") 0 100% no-repeat;
+			font-size: 1.1em; /* 12px */
+			left: -9999px;
+			line-height: 18px;
+			margin: 0;
+			position: absolute;
+			text-transform: uppercase;
+			width: 200px;
+			z-index: 10000;
+		}
+		
+		/*----ACTIVATE----*/
+		#suckerfish2 li:hover ul {
+			left: auto;
+			position: absolute;
+			z-index: 100000;
+			background: white;
+			width: 220px;
+			box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+			-moz-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+			-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+		}
+					
+					#suckerfish2 li ul li a {
+						color: #c8c8c7;
+						height: auto;
+						padding: 7px 15px;
+						text-decoration: none;
+						display: block;
+						border-bottom: 1px solid #404040;
+					}
+					
+					#suckerfish2 li ul li:hover a {  color: black; }
+
+/* @end Navigation */
+
+
+/* @group Buttons */
+
+.main-btn {
+	background: #cccccc;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 12px !important;
+	line-height: 20px;
+	text-decoration: none;
+	color: white !important;
+	width: auto !important;
+	padding: 0 0 0 6px !important;
+}
+	
+.main-btn span { 
+	background: #666666;
+	display: inline-block;
+	padding: 0px 15px 0px 8px !important;
+	line-height: 30px;
+	width: auto !important;
+}
+		
+	.purple-btn:hover { background-position: 0 -100px; }
+	.purple-btn:hover span { background-position: right -150px; }
+
+/* @end Buttons */

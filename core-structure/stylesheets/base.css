@@ -1,0 +1,120 @@
+/* @group Basic HTML
+---------------------------------------*/
+
+* { -webkit-text-size-adjust: none; } /* Stop webkit mobile automatically adjusting font sizes */
+
+html,
+body {
+	height: 100%; 
+}
+
+body {
+  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  height: 100%; 
+}
+
+pre,
+code {
+  font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+a { color: #F7931E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* @end Basic HTML */
+
+/* @group Headings
+---------------------------------------*/
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* @end Headings */
+
+/* @group Spacing
+---------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+/* @end Spacing */
+
+/* @group Miscellaneous Items
+---------------------------------------*/
+
+.wai {
+	height: 1px;
+	left: -9999px;
+	position: absolute;
+	width: 1px;
+}
+
+.rl,
+.rl ul { list-style-type: none; }
+.rl li { margin-left: 0; }
+
+/* TEXT RESIZZLE */
+.smallest { font-size: 60%; }
+.small {    font-size: 80%; }
+.normal {}
+
+.large {    font-size: 120%; line-height: 160%;}
+.largest {  font-size: 150%; line-height: 160%;}
+
+/* @end Miscellaneous Items */
