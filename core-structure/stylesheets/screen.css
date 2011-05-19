@@ -94,10 +94,12 @@ form div label {
 	float: left;
 	line-height: 2em;
 	padding: 5px 0px;
-	margin-right: 5px;
-	width: 100px;
+	margin-right: 20px;
+	text-align: right;
+	/* width: 100px; */
+	width: 30%;
 }
-form div input,
+form div input[type="text"],
 form div textarea {
 	background: #f2f2f2;
 	border: 1px solid #cccccc;
@@ -106,18 +108,14 @@ form div textarea {
 	padding: 5px 3px;
 	display: block;
 	float: left;
-	width: 300px;
+	/* width: 300px; */
+	width: 60%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
 
 .radio-check label {
-	background: #cccccc;
-	
-}
-
-.radio-check input {
-	float: left;
+	text-align: left;
 }
 
 /* @end Form Styles */
