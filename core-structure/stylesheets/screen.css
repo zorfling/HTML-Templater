@@ -16,107 +16,153 @@
 	margin:	0;
 	z-index: 1000;
 }
-	/*---LEVEL 1 MENU---*/
+/*---LEVEL 1 MENU---*/
 
-	#suckerfish2 > li {
-		float: left;
-		font-size: 11px;
-		line-height: 36px;
+#suckerfish2 > li {
+	float: left;
+	font-size: 11px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+#suckerfish2 > li > a {
+	color: #fff;
+	display: block;
+	line-height: 30px;
+	margin:  3px 0;
+	padding: 0px 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#suckerfish2 > li:hover {
+	background: #6c6b6d url("/images/menu-item.gif") repeat-x;	
+}
+
+#suckerfish2 > li + li > a  {
+		border-left: 1px solid #7b7b7b;
+}
+	
+	/*----DROP DOWN (LEVEL 2)----*/
+
+	/*----HIDE----*/
+	#suckerfish2 li ul {
+		background: #000 url("/images/sprite-menu.png") 0 100% no-repeat;
+		font-size: 1.1em; /* 12px */
+		left: -9999px;
+		line-height: 18px;
+		margin: 0;
+		position: absolute;
 		text-transform: uppercase;
-	}
-		#suckerfish2 > li > a {
-			color: #fff;
-			display: block;
-			line-height: 30px;
-			margin:  3px 0;
-			padding: 0px 12px;
-			text-align: center;
-			text-decoration: none;
-		}
-
-	#suckerfish2 > li:hover {
-		background: #6c6b6d url("/images/menu-item.gif") repeat-x;	
+		width: 200px;
+		z-index: 10000;
 	}
 	
-	#suckerfish2 > li + li > a  {
-			border-left: 1px solid #7b7b7b;
+	/*----ACTIVATE----*/
+	#suckerfish2 li:hover ul {
+		left: auto;
+		position: absolute;
+		z-index: 100000;
+		background: white;
+		width: 220px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+		-moz-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+		-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 	}
-		
-		/*----DROP DOWN (LEVEL 2)----*/
-		
+				
+	#suckerfish2 li ul li a {
+		color: #c8c8c7;
+		height: auto;
+		padding: 7px 15px;
+		text-decoration: none;
+		display: block;
+		border-bottom: 1px solid #404040;
+	}
 	
-		/*----HIDE----*/
-		#suckerfish2 li ul {
-			background: #000 url("/images/sprite-menu.png") 0 100% no-repeat;
-			font-size: 1.1em; /* 12px */
-			left: -9999px;
-			line-height: 18px;
-			margin: 0;
-			position: absolute;
-			text-transform: uppercase;
-			width: 200px;
-			z-index: 10000;
-		}
-		
-		/*----ACTIVATE----*/
-		#suckerfish2 li:hover ul {
-			left: auto;
-			position: absolute;
-			z-index: 100000;
-			background: white;
-			width: 220px;
-			box-shadow: 2px 2px 2px rgba(0,0,0,.3);
-			-moz-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
-			-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.3);
-		}
-					
-					#suckerfish2 li ul li a {
-						color: #c8c8c7;
-						height: auto;
-						padding: 7px 15px;
-						text-decoration: none;
-						display: block;
-						border-bottom: 1px solid #404040;
-					}
-					
-					#suckerfish2 li ul li:hover a {  color: black; }
+	#suckerfish2 li ul li:hover a {  color: black; }
 
 /* @end Navigation */
 
 /* @group Form Styles */
 
-form div { 
+/* BASE FORM STYLES */
+form.base-form div { 
 	overflow: hidden; 
 	margin-bottom: 10px;
 }
-form div label {
-	display: block;
-	float: left;
+form.base-form div label {
 	line-height: 2em;
 	padding: 5px 0px;
-	margin-right: 20px;
-	text-align: right;
-	/* width: 100px; */
+	margin-right: 5%;
 	width: 30%;
 }
-form div input[type="text"],
-form div textarea {
+form.base-form div input[type="text"],
+form.base-form div textarea {
 	background: #f2f2f2;
 	border: 1px solid #cccccc;
 	border-radius: 5px;
 	line-height: 20px;
 	padding: 5px 3px;
-	display: block;
-	float: left;
-	/* width: 300px; */
 	width: 60%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
 
-.radio-check label {
+form.base-form .radio-check label {
 	text-align: left;
 }
+
+/* LABEL LEFT STYLES */
+form.ll div label {
+	display: block;
+	float: left;
+	text-align: right;
+}
+
+form.ll div input[type="text"],
+form.ll div textarea {
+	display: block;
+	float: left;
+}
+
+form.ll .main-btn {
+	margin-left: 35%;
+}
+
+
+/* LABEL TOP STYLES */
+form.lt div label {
+	display: block;
+}
+
+form.lt div input[type="text"],
+form.lt div textarea {
+	display: block;
+}
+
+form.lt .radio-check label {
+	display: block;
+	float: left;
+}
+
+.radio-check {
+	width: 60%;
+	border-bottom: 1px dotted #cccccc;
+	border-top: 1px dotted #cccccc;
+}
+
+/* FORM ERRORS */
+
+form.base-form div label.error {
+	background-color: #f5dada;
+	border: 1px solid #bf0404;
+	width: 59%;
+	margin-left: 35%;
+	text-align: left;
+	padding: 0 6px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
 
 /* @end Form Styles */
 

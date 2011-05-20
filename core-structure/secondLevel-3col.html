@@ -28,6 +28,7 @@
  		<script type="text/javascript" src="js/jquery-v1.6.1.js"></script>
  		<script type="text/javascript" src="js/jquery.textresizzle.js"></script>
  		<script type="text/javascript" src="js/jquery.cookies.2.2.0.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery.validate.js"></script>
  		
  		<script type="text/javascript" src="js/site.js"></script>
  		
@@ -132,17 +133,17 @@
 						   <li>Aliquam tincidunt mauris eu risus.</li>
 						</ul>
 						
-						<form action="#" method="get" name="#">
+						<form action="#" method="get" name="#" class="base-form ll val-form">
 							<fieldset>
 								<legend><span class="wai">Title</span></legend>
 								
 								<div>
 									<label for="input1">Input1</label>
-										<input id="input1" name="input" type="text" />
+										<input id="input1" name="input1" type="text" class="required" />
 								</div>
 								<div>
 									<label for="input2">Input2</label>
-										<input id="input2" name="input" type="text" />
+										<input id="input2" name="input2" type="text" class="required" />
 								</div>
 								<div>
 									<label for="radio">Radios</label>
@@ -201,8 +202,8 @@
 										<textarea name="contact_enquiry" id="contact_enquiry" rows="5" title="Please enter your enquiry details"></textarea> 
 								</div> 
 										
-								<label for="#" id="#" class="main-btn red-btn">
-									<input id="#" name="#" type="submit" class="wai"/>
+								<label for="submit" id="#" class="main-btn red-btn">
+									<input id="submit" name="#" type="submit" class="wai"/>
 										<span>
 										Submit Button
 										</span>

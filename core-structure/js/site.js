@@ -39,8 +39,8 @@ var Site = {
 		}
 		
 		//FORM VALIDATION
-		if($('#membership-application-form').length != 0){
-			$('#member-application').validate();
+		if($('.val-form').length != 0){
+			$('.val-form').validate();
 		}
 		
 		//CONTACT FORM VALIDATION
