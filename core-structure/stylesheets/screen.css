@@ -153,19 +153,34 @@ form.lt .radio-check label {
 /* FORM ERRORS */
 
 form.base-form div label.error {
-	background-color: #f5dada;
+	background: #f5dada url(../assets/base-images/error-icon.png) no-repeat 5px 5px;
 	border: 1px solid #bf0404;
-	width: 59%;
+	max-width: 53%;
 	margin-left: 35%;
 	text-align: left;
-	padding: 0 6px;
+	padding: 0 10px 0 30px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
 
+form.base-form div input.error {
+	border: 1px solid #bf0404;
+}
 
 /* @end Form Styles */
 
+/* @group Image Gallery */
+
+.image-gallery { overflow: hidden; margin-bottom: 10px; }
+.image-gallery li {
+	float: left;
+	border: 1px solid #cccccc;
+	background: #f2f2f2;
+	padding: 10px;
+	margin: 0 10px 10px 0;
+}
+
+/* @end Image gallery */
 
 /* @group Buttons */
 
