@@ -14,8 +14,6 @@
 			increaseSizeSelector: '.text-increase', // select element to use for increase font size button or link. 
 			decreaseSizeSelector: '.text-decrease', // select element to use for decrease font size button or link. 
 			sizes: [					// specify an array of the sizes. These will be applied as class names to the parent element (selected above) to allow you to overide layout and font sizes. 
-				'smallest',
-				'small',
 				'normal',
 				'large',
 				'largest'

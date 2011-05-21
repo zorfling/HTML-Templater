@@ -4,7 +4,8 @@ $(document).ready(function(){
 		
 	Shadowbox.init({
 	    overlayOpacity: 0.8,
-	   	players:    ["html"]
+	   	players:	["html"],
+	   	flv: ['flv','mp4']
 	}, setupShadowbox);
 	
 });
@@ -16,6 +17,7 @@ function setupShadowbox() {
         continuous:     true,
         counterType:    "skip"
     });
+
 
 }
 
