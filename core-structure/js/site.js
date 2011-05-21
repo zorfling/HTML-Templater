@@ -3,7 +3,8 @@ $(document).ready(function(){
     Site.init();
 		
 	Shadowbox.init({
-	    overlayOpacity: 0.8
+	    overlayOpacity: 0.8,
+	   	players:    ["html"]
 	}, setupShadowbox);
 	
 });
