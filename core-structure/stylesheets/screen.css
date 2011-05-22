@@ -185,26 +185,28 @@ form.base-form div input.error {
 /* @group Buttons */
 
 .main-btn {
-	background: #cccccc;
 	display: inline-block;
 	cursor: pointer;
 	font-size: 12px !important;
 	line-height: 20px;
 	text-decoration: none;
-	color: white !important;
+	color: #333333 !important;
 	width: auto !important;
-	padding: 0 0 0 6px !important;
+	padding: 0 0 0 15px !important;
 }
 	
 .main-btn span { 
-	background: #666666;
 	display: inline-block;
-	padding: 0px 15px 0px 8px !important;
+	padding: 0px 15px 0px 0px !important;
 	line-height: 30px;
 	width: auto !important;
 }
-		
-	.purple-btn:hover { background-position: 0 -100px; }
-	.purple-btn:hover span { background-position: right -150px; }
+	
+	.basic-btn { background: url(../assets/base-images/basic-btn.png) no-repeat 0 0; }
+	.basic-btn span { background: url(../assets/base-images/basic-btn.png) no-repeat right -50px; }
+	
+	.basic-btn:hover { background: url(../assets/base-images/basic-btn.png) no-repeat 0 -100px; }
+	.basic-btn:hover span { background: url(../assets/base-images/basic-btn.png) no-repeat right -150px; }
+	
 
 /* @end Buttons */

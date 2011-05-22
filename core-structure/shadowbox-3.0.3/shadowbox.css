@@ -2,7 +2,16 @@
 #sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none;}
 #sb-overlay{position:relative;height:100%;width:100%;}
 #sb-wrapper{position:absolute;visibility:hidden;width:100px;}
-#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px;}
+
+/* SHADOW BOX WRAPPER */
+#sb-wrapper-inner{
+	position:relative;
+	border:1px solid red;
+	overflow:hidden;
+	height:100px;
+	padding: 10px;
+}
+
 #sb-body{position:relative;height:100%;}
 #sb-body-inner{position:absolute;height:100%;width:100%;}
 #sb-player.html{height:100%;overflow:auto;}
@@ -14,7 +23,9 @@
 #sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
 #sb-title,#sb-title-inner{height:26px;line-height:26px;}
 #sb-title-inner{font-size:16px;}
-#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+
+/* NAV AREA */
+#sb-info,#sb-info-inner{line-height:20px;}
 #sb-info-inner{font-size:12px;}
 #sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
 #sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
