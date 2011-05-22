@@ -182,6 +182,21 @@ form.base-form div input.error {
 
 /* @end Image gallery */
 
+/* @group Tabel Styles */
+
+table th {
+	background: #f2f2f2;
+	padding: 5px 10px;
+	border: 1px solid #cccccc;
+}
+
+table td {
+	border: 1px solid #cccccc;
+	padding: 5px 10px;
+}
+
+/* @end Table Styles */
+
 /* @group Buttons */
 
 .main-btn {

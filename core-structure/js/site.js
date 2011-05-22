@@ -17,6 +17,15 @@ function setupShadowbox() {
         continuous:     true,
         counterType:    "skip"
     });
+    
+    Shadowbox.setup('a[title="vimeo-video-1"]', {
+        height:     360,
+        width:      640,
+        flashVars:  {
+            clip_id:    "1893986",
+            autoplay:   "1"
+        }
+    });
 
 
 }
