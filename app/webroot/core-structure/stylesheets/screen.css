@@ -16,6 +16,7 @@
 	margin:	0;
 	z-index: 1000;
 }
+
 /*---LEVEL 1 MENU---*/
 
 #suckerfish2 > li {
@@ -107,8 +108,18 @@ form.base-form div textarea {
 	-moz-border-radius: 5px;
 }
 
+form.base-form div input[type="text"]:focus,
+form.base-form div textarea:focus {
+	background: white;
+}
+
 form.base-form .radio-check label {
 	text-align: left;
+}
+
+form.ll input.short-input[type="text"],
+form.lt input.short-input[type="text"] {
+	width: 20%;
 }
 
 /* LABEL LEFT STYLES */
@@ -130,6 +141,7 @@ form.ll .main-btn {
 
 
 /* LABEL TOP STYLES */
+
 form.lt div label {
 	display: block;
 }
