@@ -1,8 +1,6 @@
 /* @group Basic HTML
 ---------------------------------------*/
 
-* { -webkit-text-size-adjust: none; } /* Stop webkit mobile automatically adjusting font sizes */
-
 html,
 body {
 	height: 100%; 
@@ -33,27 +31,27 @@ a:hover { text-decoration: underline; }
 /* @group Headings
 ---------------------------------------*/
 
-h1 {
+.formatted h1 {
   font-size: 25px;
 }
 
-h2 {
+.formatted h2 {
   font-size: 23px;
 }
 
-h3 {
+.formatted h3 {
   font-size: 21px;
 }
 
-h4 {
+.formatted h4 {
   font-size: 19px;
 }
 
-h5 {
+.formatted h5 {
   font-size: 17px;
 }
 
-h6 {
+.formatted h6 {
   font-size: 15px;
 }
 
@@ -62,35 +60,35 @@ h6 {
 /* @group Spacing
 ---------------------------------------*/
 
-ol {
+.formatted ol {
   list-style: decimal;
 }
 
-ul {
+.formatted ul {
   list-style: disc;
 }
 
-li {
+.formatted li {
   margin-left: 30px;
 }
 
-p,
-dl,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-figure,
-form {
+.formatted p,
+.formatted dl,
+.formatted hr,
+.formatted h1,
+.formatted h2,
+.formatted h3,
+.formatted h4,
+.formatted h5,
+.formatted h6,
+.formatted ol,
+.formatted ul,
+.formatted pre,
+.formatted table,
+.formatted address,
+.formatted fieldset,
+.formatted figure,
+.formatted form {
   margin-bottom: 20px;
   line-height: 2em;
 }
@@ -107,9 +105,9 @@ form {
 	width: 1px;
 }
 
-.rl,
-.rl ul { list-style-type: none; }
-.rl li { margin-left: 0; }
+.formatted .rl,
+.formatted .rl ul { list-style-type: none; }
+.formatted .rl li { margin-left: 0; }
 
 /* TEXT RESIZZLE */
 .smallest { font-size: 60%; }

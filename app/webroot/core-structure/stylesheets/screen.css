@@ -172,13 +172,18 @@ form.base-form div input.error {
 /* @group Image Gallery */
 
 .image-gallery { overflow: hidden; margin-bottom: 10px; }
+.image-gallery li a {
+	display: block;
+}
 .image-gallery li {
 	float: left;
 	border: 1px solid #cccccc;
 	background: #f2f2f2;
 	padding: 10px;
 	margin: 0 10px 10px 0;
+	height: auto;
 }
+
 
 /* @end Image gallery */
 
